@@ -1,0 +1,8 @@
+ipykernel
+
+Pillow
+opencv-python
+numpy
+
+pdf2image
+pyocr
