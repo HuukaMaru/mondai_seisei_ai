@@ -9,15 +9,18 @@
 
     <div class="inline-block_1">
       問題
+      <p><%= question %></p>
     </div>
     <div class="inline-block_2">
       解答
       <form>
-        <% for(var i =1;i<=4;i++) { %>
+        <% for(var i =1;i<=questionsList.length;i++) { %>
           <label>設問<%= i %></label>
           <br>
-          <% for(var j =1;j<=2;j++) { %>
-            <input>
+          <% let questions = [] %>
+          <% questions = questionsList[i-1]%>
+          <% for(var j =1;j<=questions.length;j++) { %>
+            <input Id=<%= i %>_<%= j %>>
             <br>
           <% } %>
         <% } %>
