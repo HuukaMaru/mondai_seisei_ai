@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form>
+      <label>分野を選択</label><br>
+      <select name="category">
+        <option value="SC">情報セキュリティ</option>
+        <option value="MS">経営戦略</option>
+        <option value="PR">プログラミング</option>
+        <option value="SA">システムアーキテクチャ</option>
+        <option value="NW">ネットワーク</option>
+        <option value="DB">データベース</option>
+        <option value="ES">組込みシステム</option>
+        <option value="IS">情報システム</option>
+        <option value="PM">プロジェクトマネジメント</option>
+        <option value="SM">サービスマネジメント</option>
+        <option value="AU">システム監査</option>
+      </select><br>
+      <br>
+
+      <input type="radio" name="example" value="r5aki">令和5年秋
+      <input type="radio" name="example" value="r5haru">令和5年春<br>
+      <input type="radio" name="example" value="r4aki">令和4年秋
+      <input type="radio" name="example" value="r4haru">令和4年春<br>
+      <input type="radio" name="example" value="r3aki">令和3年秋
+      <input type="radio" name="example" value="r3haru">令和3年春<br>
+      <input type="radio" name="example" value="r2aki">令和2年秋
+      <input type="radio" name="example" value="r2haru">令和2年春<br>
+      <input type="radio" name="example" value="r1aki">令和元年秋
+      <input type="radio" name="example" value="r1haru">令和元年春<br>
+
+
+      <br><br>
+
+      <button type="button">回答画面へ</button>
+      </form>
+  </body>
+</html>
