@@ -45,8 +45,11 @@ router.get('/', async function (req, res, next) {
 
     try {
 
-        var questionId = req.params["questionId"] || 1;
-        var questionsList = questionData.getTestQuestionData();
+        var questionId = req.body.questionId || 1;
+        var questionAnswers = questionData.getQuestionAnswerData(questionId);
+        var question = questionAnswers.question;
+        var answersList = questionAnswers.answersList;
+        var userAnswersList = req.body.answersList;
 
         var question = "問題と設問が書かれている。これはテストデータなので、テキトーに何かあると想像してください。"
         var answersList = questionData.getTestAnswerData();
